@@ -56,24 +56,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* #endregion */
 
-/* In your CSS file, apply Grid properties until you have this basic layout built. */
-
 /* @font-face {
     font-family: norse;
     src: url(assets/font/Norse.otf);
 }
-
-@font-face {
-    font-family: norse-bold;
-    src: url(assets/font/Norsebold.otf);
-} */
+*/
 
 :root {
     /* variable declaration here */
-    /* --sidebar-min-width: 25vw;
-    --create-account-color: #596D48;
-    --input-border-color: #E5E7EB;
-    --input-invalid-border-color: red;
-    --input-selected-border-color: blue; */
+    --custom-blue: #0083d2;    
+    --custom-grey: #E0E6EF;
 }
 
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
+}
+
+.sidebar{
+    background-color: var(--custom-blue);
+    grid-row: 1 / -1;
+    grid-column: 1/2;
+}
+
+.header{
+    background-color: #FFFFFF;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+}
+
+.main-content{
+    background-color: var(--custom-grey);
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+}
