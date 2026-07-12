@@ -96,3 +96,26 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 2 / -1;
     grid-row: 2 / -1;
 }
+
+.sidebar{
+    color: #FFFFFF;
+    font-weight: bold;
+    display: grid;
+    padding: 10px;
+}
+
+.dashboard,
+.icon  /* todo: fix */
+{
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-logo{
+    color: #FFFFFF;
+    width: 80px;
+}
+
+.dashboard p{
+    font-size: 2em;
+}
