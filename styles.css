@@ -56,13 +56,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* #endregion */
 
-/* @font-face {
-    font-family: norse;
-    src: url(assets/font/Norse.otf);
+@font-face {
+    font-family: roboto-asset;
+    src: url(assets/font/Roboto-VariableFont_wdth,wght.ttf);
 }
-*/
+
 
 :root {
+    font-family: roboto-asset, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* variable declaration here */
     --custom-blue: #0083d2;    
     --custom-grey: #E0E6EF;
@@ -72,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .sidebar{
@@ -85,6 +87,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #FFFFFF;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 .main-content{
