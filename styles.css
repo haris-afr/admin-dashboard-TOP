@@ -101,11 +101,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
     font-weight: bold;
     display: grid;
-    padding: 10px;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    gap: 50px;
+
+    padding: 20px;
+    align-items: flex-start; /*This might cause issues*/
 }
 
 .dashboard,
-.icon  /* todo: fix */
+.icon
 {
     display: flex;
     align-items: center;
@@ -118,4 +122,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .dashboard p{
     font-size: 2em;
+    padding: 0px 5px;
+}
+
+.icon img{
+    width: 40px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.navbar p{
+    padding: 0px 10px
 }
