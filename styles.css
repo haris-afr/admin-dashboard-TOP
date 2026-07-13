@@ -173,3 +173,57 @@ h1, h2, h3, h4, h5, h6 {
     background-color: aqua;
     border-radius: 50px;
 }
+
+.username-heading{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.header-bottom-layer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+.greeting{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.greeting-text{
+    font-weight: bold;
+}
+
+.small-text{
+    font-size: 1em;
+}
+.large-text{
+    font-size: 1.8em;
+}
+
+.big-pfp{
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    border-radius: 80px;
+}
+
+.header-buttons{
+    display: flex;
+    gap: 30px;
+}
+
+.header-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--custom-blue);
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
