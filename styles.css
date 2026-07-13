@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .sidebar{
@@ -235,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
 
+    gap: 20px;
 }
 
 .projects{
@@ -256,4 +257,25 @@ h1, h2, h3, h4, h5, h6 {
 .main-content-heading{
     font-size: 1.3em;
     font-weight: bold;
+    padding: 10px;
+}
+
+.temp{
+    width: 100px;
+    height: 100px;
+}
+.content-card{
+    -webkit-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.1); 
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.1);
+    border-radius: 10%;
+    z-index: 3;
+    background-color: #FFFFFF;
+}
+
+.announcements div,
+.trending div
+{
+    width: 300px;
+    height: 400px;
+    
 }
