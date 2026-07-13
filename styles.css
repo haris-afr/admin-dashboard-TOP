@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* variable declaration here */
     --custom-blue: #0083d2;    
-    --custom-grey: #E0E6EF;
+    --custom-grey: #E0E6EF; 
 }
 
 .container{
@@ -140,4 +140,36 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0px 20px;
     font-size: 1.2em;
     font-weight: bolder;
+}
+
+.header-top-layer{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchbar{
+    width: 700px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: var(--custom-grey);
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pfp{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50px;
 }
