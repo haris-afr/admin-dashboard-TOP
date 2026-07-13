@@ -227,3 +227,33 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
 }
+
+.main-content{
+    padding: 50px 20px;
+    display: grid;
+
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.projects{
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+.announcements{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.trending{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+}
+
+.main-content-heading{
+    font-size: 1.3em;
+    font-weight: bold;
+}
