@@ -336,9 +336,9 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 30px;
 
     display: grid;
-    grid-template-columns: 10px 1fr;
+    grid-template-columns: 12px 1fr;
     grid-template-rows: 3fr 2fr;
-
+    overflow: hidden;
     gap: 10px;
 }
 
@@ -346,7 +346,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
 
-    width: 10px;
     background-color: var(--ominous-yellow);
 }
 
