@@ -272,10 +272,63 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #FFFFFF;
 }
 
-.announcements div,
-.trending div
+.announcements > div,
+.trending > div
 {
     width: 300px;
     height: 400px;
-    
+}
+
+.announcement-card{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    gap: 30px;
+    padding: 10px;
+    align-items: center;
+}
+
+.announcement-heading{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+.announcement-main-text{
+    text-align: center;
+}
+
+.trending-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px
+}
+
+.trending-user{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0px 30px;
+    column-gap: 15px;
+}
+
+.trending-user-pfp{
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 60px;
+}
+
+.trending-username{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+
+.trending-userbio{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: grey;
 }
