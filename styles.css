@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     /* variable declaration here */
     --custom-blue: #0083d2;    
     --custom-grey: #E0E6EF; 
+    --ominous-yellow : #F9BD34;
 }
 
 .container{
@@ -260,10 +261,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
 }
 
-.temp{
-    width: 100px;
-    height: 100px;
-}
 .content-card{
     -webkit-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.1); 
     box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.1);
@@ -332,3 +329,54 @@ h1, h2, h3, h4, h5, h6 {
     grid-row: 2 / 3;
     color: grey;
 }
+
+.main-content-card{
+    width: 400px;
+    height: 225px;
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: 3fr 2fr;
+
+    gap: 10px;
+}
+
+.ominous-yellow-line{
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+
+    width: 10px;
+    background-color: var(--ominous-yellow);
+}
+
+.main-content-card-text{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    padding: 20px;
+}
+
+.main-content-card-buttons{
+    display: flex;
+    gap: 10px;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    justify-self: end;
+    padding: 00px 20px;
+}
+.main-content-button{
+    width: 35px;
+    height: 35px;
+}
+.main-content-card-heading{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.main-content-card-description{
+    color: grey;
+}
+
