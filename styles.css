@@ -331,8 +331,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-content-card{
-    width: 400px;
-    height: 225px;
+    width: 500px;
+    height: 275px;
     border-radius: 30px;
 
     display: grid;
@@ -358,17 +358,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-content-card-buttons{
     display: flex;
-    gap: 10px;
+    gap: 20px;
 
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
     justify-self: end;
-    padding: 00px 20px;
+    align-self: end;
+    padding: 20px 20px;
 }
 .main-content-button{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 .main-content-card-heading{
     font-size: 1.2em;
@@ -379,3 +380,10 @@ h1, h2, h3, h4, h5, h6 {
     color: grey;
 }
 
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 30px;
+    
+}
