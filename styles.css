@@ -387,3 +387,13 @@ h1, h2, h3, h4, h5, h6 {
     gap: 30px;
     
 }
+
+.dark-hover-buttons:hover{
+    filter: brightness(0.9);
+}
+
+.hover-buttons:hover{
+    filter: brightness(0.9);
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+}
